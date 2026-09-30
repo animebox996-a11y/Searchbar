@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Anime Box</title>
+
+<style>
+body{
+  margin:0;
+  background:#0b0b0f;
+  color:white;
+  font-family:Arial,sans-serif;
+  text-align:center;
+}
+
+h1{
+  margin-top:50px;
+  font-size:42px;
+}
+
+.search{
+  width:90%;
+  max-width:600px;
+  margin:30px auto;
+}
+
+input{
+  width:100%;
+  box-sizing:border-box;
+  padding:16px 20px;
+  border-radius:30px;
+  border:1px solid #444;
+  background:#18181f;
+  color:white;
+  font-size:17px;
+}
+
+#results{
+  width:90%;
+  max-width:600px;
+  margin:auto;
+}
+
+.result{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#18181f;
+  padding:14px;
+  margin:8px 0;
+  border-radius:12px;
+  text-align:left;
+}
+
+.result a{
+  background:#e91e63;
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🍿 Anime Box</h1>
+
+<p>Find your anime. Start watching.</p>
+
+<div class="search">
+<input id="search" placeholder="🔍 Search anime...">
+</div>
+
+<div id="results">Loading anime...</div>
+
+<script>
+
+const API =
